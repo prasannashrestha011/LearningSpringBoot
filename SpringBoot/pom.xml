@@ -59,7 +59,17 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-
+			<dependency>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.28</version> <!-- Use the latest version -->
+		<scope>provided</scope>
+	</dependency>
+	<dependency>
+    <groupId>io.jsonwebtoken</groupId>
+    <artifactId>jjwt</artifactId>
+    <version>0.9.1</version> <!-- You can also use the latest version -->
+</dependency>
 	</dependencies>
 
 	<build>
