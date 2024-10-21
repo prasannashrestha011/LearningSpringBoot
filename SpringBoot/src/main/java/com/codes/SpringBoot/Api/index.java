@@ -20,6 +20,16 @@ public class index {
     @Autowired
     UserServiceImpl userService;
 
+    @GetMapping("/login")
+    public String LoginUser() {
+        return "you are authenticated ";
+    }
+
+    @GetMapping("/home")
+    public String getMethodName(@RequestParam(value = "user") String user) {
+        return "Welcome " + user;
+    }
+
     @PostMapping("/create/user")
     public ResponseEntity<ResponseObj> createUser(@RequestBody User user) {
 
